@@ -1,0 +1,31 @@
+#wrapper {
+  margin: auto;
+  width: 50%;
+  border: 3px solid #cc1407;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
+nav{
+  margin: auto;
+  border: 3px solid #07cc21;
+  padding: 10px;
+}
+main{
+  margin: auto;
+  width: 50%;
+  border: 3px solid #285ae2;
+  padding:10px; 
+}
+.first,
+.second,
+.third{
+  margin:5px;
+  border: 3px solid #e45f12;
+  padding: 1px;
+}
+footer{
+  margin:auto;
+  width: 50%;
+  border: 3px solid #35e412;
+  padding: 1px;
+}
