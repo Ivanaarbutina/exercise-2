@@ -7,28 +7,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header id="wrapper">
+  <div class="img-container">
+    <img src="images/Algebra logo.png" alt="Algebra-logo">
+  </div>
+  <header id="myheader">
     <h1>Turistička agencija "Avanturist"</h1>
     <nav>
       <ul>
-        <li>O nama</li>
-        <li>Naše djelatnosti</li>
-        <li>Kontakt</li>
+        <li><a href="#about-us">O nama</a></li>
+        <li><a href="#work">Naše djelatnosti</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
-    </hr>
+    <hr>
     </nav>
   </header>
-  <main>
+  <main class="content">
     <h1>Turistička agencija "Avanturist"</h1>
-    <section class="first">
+    <section id="about-us">
       <h2>O nama</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
          Rerum inventore voluptate recusandae alias qui beatae repellendus,
           quasi dolore reprehenderit, vitae sequi, quibusdam debitis accusamus.
            Ducimus quae at beatae excepturi minus.</p>
-           <img src="images/o nama.png" alt="Work">
+           <img src="images/o nama.png" alt="Work with us">
     </section>
-    <section class="second">
+    <section id="work">
       <h2>Naše djelatnosti</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
          Rerum inventore voluptate recusandae alias qui beatae repellendus,
@@ -36,36 +39,43 @@
            Ducimus quae at beatae excepturi minus.</p>
            <img src="images/naše djelatnosti.png" alt="Travel is good for the soul"> 
     </section>
-    <section class="third">
+    <section id="contact">
       <h2>Kontakt</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Rerum inventore voluptate recusandae alias qui beatae repellendus,
          quasi dolore reprehenderit, vitae sequi, quibusdam debitis accusamus.
           Ducimus quae at beatae excepturi minus</p>
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name"><br><br>
-            <input type="submit" value="Submit"> 
-          </div>
-          <div>
-            <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit">
-          </div>
-          <div>
-            <label for="text">Poruka</label>
-            <input type="text" id="text" name="text">
-            <input type="submit" value="Submit">
-          </div>
-          <button>Pošalji poruku</button>S
 
+         <form name="Kontakt" action="" method="post"
+          enctype="multipart/form-data" autocomplete="off">
 
+            <p>
+              <label for="ime">Ime i prezime</label><br>
+              <input id="ime" name="imeiprezime" type="text" size="30" required value="">
+            </p>
+            <p>
+              <label for="mail">E-mail</label><br>
+              <input id="mail" name="email" type="email" value="">
+            </p>
+            <p>
+              <label for="poruka">Poruka</label><br>
+              <textarea id="poruka" name="poruka"></textarea>
+            </p>
+            <p>
+              <input name="submit-btn" type="submit" value="Pošalji poruku">
+            </p>
+         </form>
+        
     </section>
+    <hr>
   </main>
-  <footer>
-    <p>Avanturist 2019</p>
-    <img src="images/mail.png" alt="letter"> 
+  <footer class="author">
+    <div class="copywright">
+      <i>Avanturist  &copy; 2019</i>
+    </div>
+    <a href="mailto:ivana.arbutina2@gmail.com?body=Message%20body%20text%20">
+      <img src="images/mail.png" alt="letter">
+    </a>  
   </footer>
-
 </body>
 </html>
